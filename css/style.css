@@ -43,11 +43,23 @@
 
 body {
     font-family: "Montserrat-regular";
+    transition: all 1s ease-out;
 }
 
 h2 {
     font-family: "Montserrat-semibold";
-    font-size: 36px;
+    font-size: calc(var(--index)*1.4);
+    text-align: center;
+}
+
+h3{
+    font-family: "Montserrat-bold";
+    font-size: calc(var(--index)*1.11);
+}
+
+h4 {
+    font-family: "Montserrat-semibold";
+    font-size: calc(var(--index)*1.008);
     text-align: center;
 }
 
@@ -114,10 +126,15 @@ a {
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin-bottom: 30px;
+    transition: all 1s;
 }
 
 #quotationCarousel > .carousel-inner > .carousel-item {
-    transition: 1s;
+    transition: height 1s ease-out;
+}
+.carousel-container {
+
+
 }
 
 .avatar-container {
@@ -183,30 +200,6 @@ a {
     border: 1px solid #0C86FF !important;
 }
 
-/* Адаптивное отображение секции hero */
-
-@media screen and (max-width: 1400px) {
-    .conference-name {
-        font-size: 24px;
-        line-height: 33px;
-    }
-    .conference-title {
-        font-size: 20px;
-    }
-    .logo {
-        width: 100px;
-    }
-    .title-organization-name {
-        font-size: 12px;
-    }
-    .title-organization {
-        font-size: 12px;
-    }
-    .registration-btn {
-        font-size: 25px;
-    }
-}
-
 
 /* main */
 /* Карточки конференции */
@@ -219,12 +212,54 @@ a {
 
 .conference-card-wrap {
     background: #EBF5FF;
-
     height: 200px;
     border-radius: 20px;
-    
 }
 
-.conference-card-wrap img {
 
+/* Адаптивное отображение */
+
+@media screen and (max-width: 1400px) {
+    /* текст заголовков */
+    .conference-name {
+        font-size: calc(var(--index));
+        line-height: 33px;
+    }
+    .conference-title {
+        font-size: calc(var(--index));
+    }
+    .logo {
+        width: calc(var(--index)*5);
+    }
+    .title-organization-name {
+        font-size: calc(var(--index)/1.5);
+    }
+    .title-organization {
+        font-size: calc(var(--index)/1.5);
+    }
+    .registration-btn {
+        font-size: calc(var(--index));
+    }
+    .contacts-btn {
+        font-size: calc(var(--index));
+    }
+    .conference-date {
+        font-size: calc(var(--index));
+    }
+
+    /* цитата */
+    .person-name {
+        font-size: calc(var(--index)*1.5);
+    }
+    .person-tenure {
+        font-size: calc(var(--index));
+    }
+    .quotation-text {
+        font-size: calc(var(--index));
+    }
+
+    /* карточки */
+    .conference-cards a {
+        font-size: calc(var(--index));
+    }
 }
