@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --index:calc(1vw + 1vh);
+}
+
+@font-face {
+    font-family: "Montserrat-lite";
+    src: url("../fonts/Montserrat-Light.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "Montserrat-regular";
+    src: url("../fonts/Montserrat-Regular.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "Montserrat-medium";
+    src: url("../fonts/Montserrat-Medium.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "Montserrat-semibold";
+    src: url("../fonts/Montserrat-SemiBold.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+@font-face {
+    font-family: "Montserrat-bold";
+    src: url("../fonts/Montserrat-Bold.ttf") format("truetype");
+    font-style: normal; 
+    font-weight: normal; 
+}
+
+body {
+    font-family: "Montserrat-regular";
+}
+
+h2 {
+    font-family: "Montserrat-semibold";
+    font-size: 36px;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* header */
+/* стили лого и названия организации */
+.section-hero {
+    background: url(../images/header-imgs/ice-background.svg);
+    background-repeat: repeat-x;
+    color: white;
+    min-height: 1000px;
+    background-size: auto 100%;
+    padding-bottom: 100px;
+}
+
+.title-organization-container {
+    max-width: 560px;
+}
+
+.title-organization {
+    font-family: "Montserrat-lite";
+    font-size: 14px;
+}
+
+.title-organization-name {
+    font-family: "Montserrat-bold";
+    font-size: 14px;
+}
+
+/* стили названия конференции */
+.conference-title {
+    font-family: "Montserrat-lite";
+    font-size: 28px;
+}
+
+.conference-name {
+    font-family: "Montserrat-bold";
+    font-size: 43px;
+    line-height: 48px;
+}
+
+.conference-date {
+    font-size: 32px;
+}
+
+/* стили кнопок */
+.registration-btn {
+    font-family: "Montserrat-bold";
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.contacts-btn {
+    font-family: "Montserrat-semibold";
+    font-size: 20px;
+    line-height: 150%;
+}
+
+/* стили цитаты */
+.quotation-container {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-bottom: 30px;
+}
+
+#quotationCarousel > .carousel-inner > .carousel-item {
+    transition: 1s;
+}
+
+.avatar-container {
+    height: 220px;
+}
+
+.avatar-background {
+    width: 160px;
+    height: 160px;
+    border-radius: 100%;
+    background-color: #0C86FF;
+    overflow: hidden;
+}
+
+.quotation-img-first {
+    border-radius: 100%;
+    position: relative;
+    bottom: 30px;
+    width: 160px;
+    height: auto;
+    z-index: 0;
+    user-select: none;
+    pointer-events: none;
+}
+
+.quotation-img-second {
+    border-radius: 100%;
+    z-index: 1;
+    position: relative;
+    bottom: 190px;
+    width: 160px;
+    height: 100px;
+    object-fit: cover;
+    object-position: top;
+    user-select: none;
+    pointer-events: none;
+}
+
+.quotation-text {
+    color: black;
+    margin: 10px 15px 10px 40px;
+}
+
+.person-name {
+    font-family: "Montserrat-medium";
+    font-size: 36px;
+    line-height: 40px;
+    margin: 0;
+}
+
+.person-tenure {
+    font-family: "Montserrat-regular";
+    font-size: 22px;
+}
+
+.quote {
+    font-family: "Montserrat-lite";
+    font-size: 18px;
+}
+
+.carousel-indicators button {
+    background: #0C86FF !important;
+    border: 1px solid #0C86FF !important;
+}
+
+/* Адаптивное отображение секции hero */
+
+@media screen and (max-width: 1400px) {
+    .conference-name {
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .conference-title {
+        font-size: 20px;
+    }
+    .logo {
+        width: 100px;
+    }
+    .title-organization-name {
+        font-size: 12px;
+    }
+    .title-organization {
+        font-size: 12px;
+    }
+    .registration-btn {
+        font-size: 25px;
+    }
+}
+
+
+/* main */
+/* Карточки конференции */
+
+.conference-cards a {
+    color: black;
+    font-family: "Montserrat-medium";
+    font-size: 18px;
+}
+
+.conference-card-wrap {
+    background: #EBF5FF;
+
+    height: 200px;
+    border-radius: 20px;
+    
+}
+
+.conference-card-wrap img {
+
+}
