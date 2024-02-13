@@ -43,23 +43,22 @@
 
 body {
     font-family: "Montserrat-regular";
-    transition: all 1s ease-out;
 }
 
 h2 {
     font-family: "Montserrat-semibold";
-    font-size: calc(var(--index)*1.4);
+    font-size: 36px;
     text-align: center;
 }
 
 h3{
     font-family: "Montserrat-bold";
-    font-size: calc(var(--index)*1.11);
+    font-size: 32px;
 }
 
 h4 {
     font-family: "Montserrat-semibold";
-    font-size: calc(var(--index)*1.008);
+    font-size: 26px;
     text-align: center;
 }
 
@@ -76,6 +75,8 @@ a {
     min-height: 1000px;
     background-size: auto 100%;
     padding-bottom: 100px;
+    transition: height .4s ease-in-out !important;
+
 }
 
 .title-organization-container {
@@ -126,16 +127,23 @@ a {
     background-color: rgb(255, 255, 255);
     border-radius: 20px;
     margin-bottom: 30px;
-    transition: all 1s;
+    
+    position: absolute;
+    bottom: 0;
 }
 
-#quotationCarousel > .carousel-inner > .carousel-item {
-    transition: height 1s ease-out;
+#quotationCarousel .carousel-inner .carousel-item {
+    transition: all 1s !important;
 }
-.carousel-container {
+
+.carousel-item {
+    min-height: 300px;
+    position: relative;
+
+}
 
 
-}
+
 
 .avatar-container {
     height: 220px;
@@ -219,8 +227,39 @@ a {
 
 /* Адаптивное отображение */
 
+@media screen and (max-width: 992px) {
+    /* цитата */
+    .person-name {
+        font-size: calc(var(--index)*1.5);
+    }
+    .person-tenure {
+        font-size: calc(var(--index));
+    }
+    .quotation-text {
+        font-size: calc(var(--index));
+    }
+    .quote {
+        font-size: calc(var(--index));
+    }
+    .carousel-item {
+        min-height: 550px;
+
+    
+    }
+
+}
+
 @media screen and (max-width: 1400px) {
     /* текст заголовков */
+    h2 {
+        font-size: calc(var(--index)*1.4);
+    }
+    h3{
+        font-size: calc(var(--index)*1.11);
+    }
+    h4 {
+        font-size: calc(var(--index)*1.008);
+    }
     .conference-name {
         font-size: calc(var(--index));
         line-height: 33px;
@@ -237,26 +276,14 @@ a {
     .title-organization {
         font-size: calc(var(--index)/1.5);
     }
-    .registration-btn {
-        font-size: calc(var(--index));
-    }
-    .contacts-btn {
+    .btn {
         font-size: calc(var(--index));
     }
     .conference-date {
         font-size: calc(var(--index));
     }
 
-    /* цитата */
-    .person-name {
-        font-size: calc(var(--index)*1.5);
-    }
-    .person-tenure {
-        font-size: calc(var(--index));
-    }
-    .quotation-text {
-        font-size: calc(var(--index));
-    }
+
 
     /* карточки */
     .conference-cards a {
