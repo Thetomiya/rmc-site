@@ -132,14 +132,10 @@ a {
     bottom: 0;
 }
 
-#quotationCarousel .carousel-inner .carousel-item {
-    transition: all 1s !important;
-}
-
 .carousel-item {
     min-height: 300px;
     position: relative;
-
+    transition: all 1s !important;
 }
 
 
@@ -212,20 +208,123 @@ a {
 /* main */
 /* Карточки конференции */
 
-.conference-cards a {
+.conference-card-wrap {
+    background: #EBF5FF;
+    height: 200px;
+    border-radius: 20px;
     color: black;
     font-family: "Montserrat-medium";
     font-size: 18px;
 }
 
-.conference-card-wrap {
-    background: #EBF5FF;
-    height: 200px;
-    border-radius: 20px;
+/*Стили для архива*/
+.archive-select  {
+    max-width: 200px;
 }
 
+.archive-block {
+    border: 1px solid #EAECEF;
+    border-radius: 30px;
+    padding: 40px 30px;
+}
+
+.archive-btns .btn:not(:last-child) {
+    margin-right: 10px;
+}
+
+.archive-card {
+    background-color: #EBF5FF;
+    border-radius: 20px;
+    padding: 20px 50px;
+}
+
+.archive-info {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0;
+}
+
+.archive-info p {
+    font-size: 24px;
+    text-align: justify;
+    padding-right: 15px;
+}
+
+.archive-video {
+    position: relative;
+    padding-bottom: 26.25%;
+    padding-top: 25px;
+    height: 0;
+}
+
+.archive-video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+/*Слайдер с партнерами*/
+.partners {
+    -webkit-mask: linear-gradient(
+        to left,
+        rgba(0, 0, 0, 0) 0%,
+        rgba(0, 0, 0, 1) 20%,
+        rgba(0, 0, 0, 1) 80%,
+        rgba(0, 0, 0, 0) 100%
+      );
+}
+
+.partner {
+    padding: 0 20px;
+}
+
+.partner img {
+    height: calc(var(--index)*5);
+}
+
+/*Подвал*/
+footer {
+    background: linear-gradient(
+        to bottom,
+        #6BAFFF,
+        #047EFF
+    );
+    color: white;
+    padding: 40px 0;
+}
+
+.footer-block {
+    max-width: calc(var(--index)*15);
+}
+
+.footer-text {
+    font-size: 20px;
+}
+
+.footer-text:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.footer-img {
+    width: calc(var(--index)*3);;
+}
 
 /* Адаптивное отображение */
+@media screen and (max-width: 576px) {
+    .archive-card {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .archive-video {
+        padding-bottom: 56.25%;
+    }
+}
 
 @media screen and (max-width: 992px) {
     /* цитата */
@@ -242,9 +341,7 @@ a {
         font-size: calc(var(--index));
     }
     .carousel-item {
-        min-height: 550px;
-
-    
+        min-height: 630px;
     }
 
 }
@@ -283,10 +380,18 @@ a {
         font-size: calc(var(--index));
     }
 
-
-
     /* карточки */
     .conference-cards a {
         font-size: calc(var(--index));
+    }
+
+    /* архив */
+    .archive-info p {
+        font-size: calc(var(--index)*0.93);
+    }
+
+    /* подвал */
+    .footer-text {
+        font-size: calc(var(--index)*0.9);
     }
 }
