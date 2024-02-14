@@ -132,7 +132,7 @@ a {
 }
 
 .carousel-item {
-    min-height: 300px;
+    min-height: 320px;
     position: relative;
     transition: all .6s !important;
 }
@@ -140,7 +140,6 @@ a {
 #quotationCarouselIndicators {
     display: flex;
     align-items: center;
-
 }
 
 .avatar-container {
@@ -314,6 +313,82 @@ footer {
 .footer-img {
     width: 94px;
 }
+
+
+/* modals */
+.modal-exit-btn{
+    width: calc(var(--index)1);
+}
+.open-modal-btn,.exit-btn{
+    cursor: pointer;
+}
+.modal{
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.1s linear, visibility 0.1s linear;
+}
+.modal.show{
+    opacity: 1;
+    visibility: visible;
+}
+
+.registration-select-modal-wrapper {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+/*Модальное окно редактирования партнеров*/
+.partners-edit {
+    height: 600px;
+    overflow-y: scroll;
+}
+
+.partner-edit-card {
+    position: relative;
+    border: 2px solid #EAECEF;
+    border-radius: 20px;
+}
+
+.close-icon {
+    background: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid #EAECEF;
+    border-radius: 5px;
+    padding: 2px 7px;
+}
+
+.partner-edit-card img {
+    max-height: 170px;
+    max-width: 100%;
+}
+
+/*Модальное окно добавления в архив*/
+.archive-create-card {
+    position: relative;
+}
+
+.archive-create-card .plus, .archive-create-card .minus {
+    right: 20px;
+}
+
+.inactive-archive {
+    opacity: .7;
+}
+
+.plus, .minus {
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    border: 1px solid #EAECEF;
+    border-radius: 5px;
+    padding: 4px 5px;
+    z-index: 99;
+}
+
 
 /* Адаптивное отображение */
 @media screen and (max-width: 576px) {
