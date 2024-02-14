@@ -76,7 +76,6 @@ a {
     background-size: auto 100%;
     padding-bottom: 100px;
     transition: height .4s ease-in-out !important;
-
 }
 
 .title-organization-container {
@@ -135,11 +134,14 @@ a {
 .carousel-item {
     min-height: 300px;
     position: relative;
-    transition: all 1s !important;
+    transition: all .6s !important;
 }
 
+#quotationCarouselIndicators {
+    display: flex;
+    align-items: center;
 
-
+}
 
 .avatar-container {
     height: 220px;
@@ -283,7 +285,7 @@ a {
 }
 
 .partner img {
-    height: calc(var(--index)*5);
+    height: 160px;
 }
 
 /*Подвал*/
@@ -305,12 +307,12 @@ footer {
     font-size: 20px;
 }
 
-.footer-text:not(:last-child) {
+.footer-text {
     margin-bottom: 10px;
 }
 
 .footer-img {
-    width: calc(var(--index)*3);;
+    width: 94px;
 }
 
 /* Адаптивное отображение */
@@ -318,11 +320,18 @@ footer {
     .archive-card {
         padding: 10px;
     }
+    .footer-text, .footer-block {
+        max-width: 100%;
+        text-align: center;
+    }
 }
 
 @media screen and (max-width: 768px) {
     .archive-video {
         padding-bottom: 56.25%;
+    }
+    .btn {
+        font-size: calc(var(--index));
     }
 }
 
@@ -344,6 +353,9 @@ footer {
         min-height: 630px;
     }
 
+    .section-hero {
+        min-height: auto;
+    }
 }
 
 @media screen and (max-width: 1400px) {
@@ -373,9 +385,6 @@ footer {
     .title-organization {
         font-size: calc(var(--index)/1.5);
     }
-    .btn {
-        font-size: calc(var(--index));
-    }
     .conference-date {
         font-size: calc(var(--index));
     }
@@ -390,8 +399,16 @@ footer {
         font-size: calc(var(--index)*0.93);
     }
 
+    /* партнёры */
+    .partner img {
+        height: calc(var(--index)*5);
+    }
+
     /* подвал */
     .footer-text {
         font-size: calc(var(--index)*0.9);
+    }
+    .footer-img {
+        width: calc(var(--index)*3);;
     }
 }
