@@ -8,7 +8,7 @@
     <title>РМЦ Архангельская область</title>
 </head>
 <body>
-    <div class="open-modal-btn add-quotation-btn position-absolute z-2 bg-white" style="top:10%; left:10%; width:100px;">
+    <!-- <div class="open-modal-btn add-quotation-btn position-absolute z-2 bg-white" style="top:10%; left:10%; width:100px;">
 		<img src="images/modal-imgs/plus.svg" alt="plus_btn">
 	</div>
 
@@ -22,7 +22,7 @@
 
     <div class="open-modal-btn create-archive-btn position-absolute z-2 bg-white" style="top:25%; left:10%; width:100px;">
 		<img src="images/modal-imgs/plus.svg" alt="plus_btn">
-	</div>
+	</div> -->
     <header>
         <section class="section-hero">
             <div class="container p-lg-0">
@@ -140,7 +140,7 @@
     </header>
 
     <main>
-        <section class="conference-cards">
+        <!-- <section class="conference-cards">
             <div class="container">
                 <div class="row">
                     <div class="col-6 col-lg-4 col-xl-3 col-xxl-2 mb-3">
@@ -274,7 +274,47 @@
                       </nav>
                 </div>
             </div>
+        </section> -->
+
+        <section class="contacts-table">
+            <div class="container">
+                <div class="row">
+                    <h2 class="text-center my-4">Контакты</h2>
+                    <table class="table mx-auto">
+                        <thead>
+                            <tr>
+                                <th>ФИО</th>
+                                <th>Должность</th>
+                                <th>Телефон</th>
+                                <th>E-mail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>Шульгина Валентина Юрьевна</th>
+                                <td>Директор</td>
+                                <td>28-58-37</td>
+                                <td>secretary@pionerov.ru</td>
+                            </tr>
+                            <tr>
+                                <th>Афанасьева Елена Сергеевна</th>
+                                <td>Заместитель директора по учебной работе</td>
+                                <td>21-00-36</td>
+                                <td>secretary@pionerov.ru</td>
+                            </tr>
+                            <tr>
+                                <th>Марценковская Елена Анатольевна</th>
+                                <td>Директор</td>
+                                <td>28-58-38</td>
+                                <td>zavuch@pionerov.ru</td>
+                            </tr>
+                            
+                        </tbody>
+                    </table>
+                </div>
+            </div>
         </section>
+
         <div class="partners" style="overflow-x:hidden;">
             <a href="#" class="partner">
                 <img src="images/partners/1.jpeg" alt="">
@@ -432,7 +472,8 @@
 				</div>
 			</div>
 		</div>
-    </div>
+		
+	</div>
 
     <div class="modal edit-partner-modal min-vh-100 min-vw-100 position-fixed z-3">
         <div class="modal-bg position-fixed min-vh-100 min-vw-100 bg-black bg-opacity-50">
@@ -666,7 +707,7 @@
         </div>
         <div class="container min-vh-100">
             <div class="row min-vh-100">
-                <div class="col-lg-6 col-11 my-auto mx-auto bg-white rounded position-relative">
+                <div class="col-6 my-auto mx-auto bg-white rounded position-relative">
                     <form action="" method="post">
                         <div class="col-12 d-flex mt-2">
                             <img src="images/modal-imgs/x.svg" alt="exit_btn" class="exit-btn modal-exit-btn ms-auto">
@@ -693,10 +734,6 @@
                                 </li>
                                 <a href="#" class="btn btn-primary mb-3">ФОКУС-ГРУППА “Адреса опыта. Новые решения”</a>
                             </ul>
-                        </div>
-
-                        <div class="col-12 d-flex mb-3">
-                            <button class="btn btn-primary ms-auto" type="submit">Сохранить</button>
                         </div>
                     </form>
                 </div>
