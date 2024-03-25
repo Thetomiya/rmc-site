@@ -314,34 +314,6 @@ footer {
     width: 94px;
 }
 
-/* таблица контактов */
-table {
-    border-style: hidden;
-    max-width: 1150px !important;
-    margin-bottom: 100px !important;
-}
-
-.table thead {
-    border-bottom: 2px solid black;
-    border-color: #0C86FF;
-}
-table td, table th {
-    border: 1px solid black;
-    border-color: #0C86FF;
-    padding: 5px 10px;
-    word-break: break-all !important;
-}
-
-table th {
-    font-family: "Montserrat-bold";
-    font-size: 16px;
-}
-
-table td {
-    font-family: "Montserrat-regular";
-    font-size: 16px;
-}
-
 
 /* modals */
 .modal-exit-btn{
@@ -513,18 +485,5 @@ table td {
     }
     .footer-img {
         width: calc(var(--index)*3);;
-    }
-
-    /* таблица контактов */
-    table td, table th {
-        padding: 2px;
-    }
-
-    table th {
-        font-size: calc(var(--index)*0.9);
-    }
-
-    table td {
-        font-size: calc(var(--index)*0.9);
     }
 }
