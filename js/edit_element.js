@@ -47,6 +47,12 @@ document.addEventListener('DOMContentLoaded', () => {
 		}
 	}
 	function set_content_event(event){
+		change_content_btn.forEach(btn=>{
+			if(btn.hasAttribute("checked")){
+				btn.removeAttribute("checked");
+			}
+		});
+		event.target.setAttribute("checked","checked");
 		set_content(event.target);
 	}
 	function close_modal_event(event) {
